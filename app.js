@@ -2,9 +2,7 @@ require("dotenv").config();
 const cors = require("cors");
 const { v2: cloudinary } = require("cloudinary");
 
-const path = require("path");
 const express = require("express");
-const flash = require("connect-flash");
 const connectDB = require("./config/database");
 const jwt = require("jsonwebtoken");
 const User = require("./models/User");
