@@ -40,6 +40,7 @@ const getProductsData = async () => {
     throw new Error(`Error fetching products: ${error.message}`);
   }
 };
+
 app.use("/api", authRoutes);
 app.use("/api/products", productRoutes);
 app.post("/api/admin-info", async (req, res) => {
